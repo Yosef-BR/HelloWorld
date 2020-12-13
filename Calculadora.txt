@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+
+UM,DOIS,TRES: REAL
+OP,ES: CARACTERE
+inicio
+Repita
+Escreval (" Escreva um numero")
+         Leia(UM)
+Escreval (" Escreva a operacao usando + / - *")
+         Leia(OP)
+Escreval (" Escreva o segundo numero")
+         Leia(DOIS)
+         
+Escolha OP
+        Caso "*"
+        TRES <- UM*DOIS
+        Caso "/"
+        TRES <- UM/DOIS
+        Caso "-"
+        TRES <- UM-DOIS
+        Caso "+"
+        TRES <- UM+DOIS
+Fimescolha
+          Escreval("O resultado de",UM, OP, DOIS,"e",TRES)
+          Escreval("Deseja repetir a operacao?")
+                           Leia(ES)
+                           
+Ate (ES="N")
+fimalgoritmo
